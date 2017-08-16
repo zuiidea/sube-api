@@ -64,6 +64,14 @@ module.exports = function graceRouter(app, options) {
     let pathRegexp = formatPath(filePath, root)
 
     getRoute(exportFuncs, (exportFun, ctrlpath) => {
+      console.log({
+        domain: Domain,
+        method: exportFun.__method__,
+        regular: exportFun.__regular__,
+        suffix: exportFun.__suffix__,
+        ctrlpath: ctrlpath,
+        ctrl: exportFun
+      })
       setRoute(Router, {
         domain: Domain,
         method: exportFun.__method__,

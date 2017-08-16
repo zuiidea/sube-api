@@ -27,6 +27,7 @@ module.exports = {
   api: {
     github_api: 'https://api.github.com/',
     github: 'https://github.com/',
+    sspai_api:'https://sspai.com/api/v1/'
   },
 
   // mock server配置

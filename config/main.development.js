@@ -6,6 +6,7 @@ module.exports = {
   // vhost配置
   vhost: {
     '192.168.1.110': 'sube',
+    'localhost':'sube'
   },
 
   // router配置
@@ -25,6 +26,7 @@ module.exports = {
   api: {
     github_api: 'https://api.github.com/',
     github: 'https://github.com/',
+    sspai_api:'https://sspai.com/api/v1/'
   },
 
   // mock server配置

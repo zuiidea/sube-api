@@ -1,0 +1,62 @@
+{
+  "name": "sube-api",
+  "version": "1.0.0",
+  "description": "An api server for sube",
+  "main": "./src/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "dev": "./node_modules/.bin/nodemon bin/server.js",
+    "start": "node bin/server.js --env=production",
+    "lint": "eslint --ext .js src test config bin middleware app --fix"
+  },
+  "keywords": [
+    "koa",
+    "koajs",
+    "koa-grace",
+    "gracejs"
+  ],
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "dependencies": {
+    "bluebird": "3.4.6",
+    "bytes": "^2.4.0",
+    "co": "^4.6.0",
+    "co-body": "^4.2.0",
+    "compressible": "^2.0.8",
+    "copy-to": "^2.0.1",
+    "debug": "^2.6.0",
+    "extend": "^3.0.1",
+    "formidable": "^1.0.17",
+    "grace-consolidate": "^0.14.3",
+    "http-errors": "^1.5.0",
+    "koa": "^2.0.1",
+    "koa-compose": "^3.1.0",
+    "koa-is-json": "^1.0.0",
+    "koa-send": "^3.2.0",
+    "koa-session": "^5.3.0",
+    "methods": "^1.1.2",
+    "minimatch": "^3.0.3",
+    "mongoose": "^4.6.3",
+    "nunjucks": "^3.0.0",
+    "path-to-regexp": "^1.6.0",
+    "raven": "^0.12.1",
+    "request": "^2.75.0",
+    "statuses": "^1.3.0",
+    "strip-json-comments": "^2.0.1",
+    "swiger": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.4.1",
+    "mm": "^2.0.0",
+    "mocha": "^3.1.0",
+    "nodemon": "^1.10.2",
+    "should": "^11.1.0",
+    "supertest": "^2.0.0"
+  },
+  "license": "MIT"
+}

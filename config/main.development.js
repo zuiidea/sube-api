@@ -5,8 +5,9 @@ process.env.DEBUG = process.env.DEBUG || '*'
 module.exports = {
   // vhost配置
   vhost: {
-    '192.168.1.110': 'sube',
-    'localhost':'sube'
+    'api.sube.zuiidea.com': 'sube',
+    'localhost':'sube',
+    '47.92.30.98':'sube'
   },
 
   // router配置

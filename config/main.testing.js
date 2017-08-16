@@ -5,9 +5,9 @@ process.env.DEBUG = process.env.DEBUG || 'koa-grace*'
 module.exports = {
   // vhost配置
   vhost: {
-    'zuiidea.sube.com': 'sube',
-    'localhost': 'sube',
-    '192.168.1.110': 'sube'
+    'api.sube.zuiidea.com': 'sube',
+    'localhost':'sube',
+    '47.92.30.98':'sube'
   },
 
   // router配置

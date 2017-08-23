@@ -5,15 +5,13 @@ process.env.DEBUG = process.env.DEBUG || 'koa-grace-error:*'
 module.exports = {
   // vhost配置
   vhost: {
-    'api.sube.zuiidea.com': 'sube',
-    'localhost':'sube',
-    '47.92.30.98':'sube'
+    'api.sube.zuiidea.com': 'sube'
   },
 
   // router配置
   router: {
     prefix: {
-      test: '/test'
+      sube: '/api/v1'
     }
   },
 
@@ -25,8 +23,6 @@ module.exports = {
 
   // controller中请求各类数据前缀和域名的键值对
   api: {
-    github_api: 'https://api.github.com/',
-    github: 'https://github.com/',
     sspai_api:'https://sspai.com/api/v1/'
   },
 
@@ -38,7 +34,7 @@ module.exports = {
   // 站点相关的配置
   site: {
     env: 'production',
-    port: 3000,
+    port: 4000,
     hostname: 'production'
   },
 
@@ -46,7 +42,7 @@ module.exports = {
   constant: {
     cdn: '',
     domain: {
-      demo: 'http://127.0.0.1:3000'
+      demo: 'http://127.0.0.1:4000'
     },
     token: ""
   },

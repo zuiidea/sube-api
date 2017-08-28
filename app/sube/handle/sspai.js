@@ -1,7 +1,7 @@
 const { articleNotfond } = require('./common')
 
 const handleList = async function (self) {
-  await self.proxy('sspai:articles')
+  await self.proxy('https://sspai.com/api/v1/articles')
   const data = self.body
   if (!data.error) {
     self.body = {
@@ -19,7 +19,7 @@ const handleList = async function (self) {
 }
 
 const handleDetail = async function (self) {
-  await self.proxy('sspai:articles/' + self.params.id)
+  await self.proxy('https://sspai.com/api/v1/articles/' + self.params.id)
   const data = self.body
   if (!data.error) {
     self.body = {

@@ -25,15 +25,15 @@ const METHOD_TYPES = {
 
 
 /**
- * 
+ *
  * @param  {string} app     context
  * @param  {object} api     api配置项
  * @param  {object} config  proxy 补充配置项
  * @param  {object} options request配置项
- * 
+ *
  * @return {function}
- * 
- * @todo this.proxy返回http statusCode 
+ *
+ * @todo this.proxy返回http statusCode
  * @todo 提供看有哪些接口的快捷方式
  */
 module.exports = function proxy(app, api, config, options) {
@@ -72,7 +72,7 @@ module.exports = function proxy(app, api, config, options) {
         }
 
         // 抽离opt为string的情况：
-        // 如果当前语法为：this.proxy('test:test/test')， 
+        // 如果当前语法为：this.proxy('test:test/test')，
         // 则直接将返回内容注入到this.body
         if (typeof opt === 'string') {
           destObj = ctx
@@ -168,7 +168,7 @@ module.exports = function proxy(app, api, config, options) {
       /**
        * 从其他server通过http的方式拉取资源
        * @param {String} url           请求url
-       * @yield {Object} 返回数据 
+       * @yield {Object} 返回数据
        */
       fetch: function(url, config) {
         config = config || {}
@@ -245,7 +245,7 @@ module.exports = function proxy(app, api, config, options) {
   /**
    * 格式化body：如果body为空对象则直接返回false，用以填一个request的坑，
    * @param  {Object} body body对象
-   * @return {Object|Boolean} 
+   * @return {Object|Boolean}
    */
   function formatBody(body) {
     for (let key in body) {
@@ -350,7 +350,7 @@ module.exports = function proxy(app, api, config, options) {
    * 合并参数
    * @param  {String} url   URL
    * @param  {Object} query 当前请求的query
-   * @return {String}       返回URL      
+   * @return {String}       返回URL
    */
   function addQuery(url, query) {
     let urlObj = url_opera.parse(url)

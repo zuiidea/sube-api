@@ -23,7 +23,9 @@ module.exports = {
 
   // controller中请求各类数据前缀和域名的键值对
   api: {
-    sspai_api:'https://sspai.com/api/v1/'
+    sspai:'https://sspai.com/api/v1/',
+    one:'http://m.wufazhuce.com',
+    kaiyan:'http://baobab.kaiyanapp.com/api/v4/',
   },
 
   // mock server配置

@@ -48,7 +48,7 @@ const handleDetail = async function (self) {
     self.body = {
       id: data.id,
       body: data.purecontent,
-      title: data.result,
+      title: data.title,
       createTime: new Date(data.time).getTime(),
       video: 'http://v.youku.com/v_show/id_' + data.video + '==.html',
       videoType: 'youku'

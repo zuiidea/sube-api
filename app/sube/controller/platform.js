@@ -1,6 +1,8 @@
 const one = require('../handle/one')
 const sspai = require('../handle/sspai')
-const { platformNotfond } = require('../handle/common')
+const kaiyan = require('../handle/kaiyan')
+const yixi = require('../handle/yixi')
+const {platformNotfond} = require('../handle/common')
 
 exports[':platform'] = {
   articles: async function () {
@@ -9,6 +11,10 @@ exports[':platform'] = {
       await sspai.handleList(this)
     } else if (platform === 'one') {
       await one.handleList(this)
+    // } else if (platform === 'kaiyan') {
+    //   await kaiyan.handleList(this)
+    } else if (platform === 'yixi') {
+      await yixi.handleList(this)
     } else {
       this.body = platformNotfond
     }
@@ -19,6 +25,10 @@ exports[':platform'] = {
       await sspai.handleDetail(this)
     } else if (platform === 'one') {
       await one.handleDetail(this)
+    // } else if (platform === 'kaiyan') {
+    //   await one.handleDetail(this)
+    } else if (platform === 'yixi') {
+      await yixi.handleDetail(this)
     } else {
       this.body = platformNotfond
     }

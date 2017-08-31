@@ -15,5 +15,5 @@ const articleNotfond = Object.assign(notFound,{
 module.exports = {
   notFound,
   platformNotfond,
-  articleNotfond
+  articleNotfond,
 }
